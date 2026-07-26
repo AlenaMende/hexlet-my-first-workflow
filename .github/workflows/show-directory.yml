@@ -10,4 +10,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - run: make say-hello
+      - run: |
+          pwd
+          ls -la
+          cat Makefile
+          make say-hello
